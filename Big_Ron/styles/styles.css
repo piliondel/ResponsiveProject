@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:700');
+
+input {
+  display: none;
+}
+
+label {
+  width: 25px;
+  height: 25px;
+  border-radius: 2px;
+  border: 1px #afafaf solid;
+  display: block;
+  line-height: 22px;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+  background: white;
+  position: relative;
+}
+
+input:checked+label:before {
+  opacity: 1;
+}
+
+label:before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  height: 15px;
+  width: 15px;
+  background: #8ac915;
+  content: '';
+  opacity: 0;
+}
+
+.terms_of_use {
+	display: block;
+  float: left;
+  margin-left: 35px;
+  margin-top: -27px;
+	font-size: 16px;
+	color: #afafaf;
+}
+
+body {
+	background-image: url('../images/background.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#logo {
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+}
+
+.img_div{
+	margin: 0 auto;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+1,0+72 */
+	background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 1%, rgba(255,255,255,0) 72%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 1%,rgba(255,255,255,0) 72%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 1%,rgba(255,255,255,0) 72%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+section.mishon {
+	padding-left: 0;
+	padding-right: 0;
+	background:rgba(255,255,255, 0.6);
+}
+
+main {
+	position: relative;
+}
+
+.text_ron {
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	color: #920000;
+}
+
+.left_div {
+	width: 418px;
+}
+
+.left_div p {
+	font-size: 20px;
+	font-family: 'Times New Roman';
+	font-weight: bold;
+	text-align: center;
+	color: #212c4f;
+}
+
+.form_div {
+	background-color: rgba(0, 0, 0, 0.3);
+	padding: 10px;
+	border-radius: 4px;
+}
+
+form {
+	background-color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+#signUp {
+	background-color: #96d12e;
+	width: 100%;
+}
+
+#imgOfRon {
+  width: 100%;
+}
+
+footer {
+	height: 80px;
+	background-color: #0d0f39;
+	color: #009fe3;
+	text-align: center;
+	line-height: 80px;
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) and (max-width : 480px){
+
+.img_div{
+	width: 70%;
+}
+
+.text_ron {
+	font-size: 70px;
+	line-height: 67px;
+}
+
+.Ron_div, .Ron_div img {
+	width: 100%;
+}
+
+.left_div {
+	margin-top: -2px;
+	width: 100%;
+}
+
+.left_div p {
+	color: white;
+	background-color: rgba(0, 0, 0, 0.6);
+	margin-bottom: 0;
+	padding: 16px;
+}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) and (max-width : 768px) {
+
+.img_div{
+	width: 55%;
+	margin-bottom: 65px;
+}
+
+.text_ron {
+	font-size: 55px;
+	line-height: 65px;
+	width: 65%;
+}
+
+.left_div {
+	width: 100%;
+	padding: 20px 10%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.left_div p {
+	color: white;
+}
+
+.Ron_div {
+	width: 190px;
+	position: absolute;
+	right: 0;
+	top: -280px;
+}
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+
+#logo {
+	margin: 0 auto;
+	display: block;
+	width: 85%;
+}
+
+.text_ron {
+	font-size: 84px;
+	line-height: 85px;
+  margin-bottom: 20px;
+	width: 100%;
+}
+
+.Ron_div {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 35%;
+}
+
+.form_div, .left_div p {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.left_div {
+	width: 70%;
+}
+
+.img_div {
+	width: 55%;
+	margin-bottom: 50px;
+}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+section.mishon {
+	margin: 70px auto;
+	float: none;
+}
+
+#logo {
+	width: 80%;
+}
+
+.left_div p {
+  font-size: 24px;
+  display: block;
+  width: 80%;
+  font-size: 20px;
+}
+
+main {
+	min-height: 490px;
+}
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+section.mishon {
+	width: 846px;
+	margin-top: 150px;
+}
+
+main {
+	min-height: 620px;
+}
+
+.img_div{
+	width: 50%;
+}
+
+.text_ron {
+	font-size: 80px;
+  margin-bottom: 44px;
+}
+
+.left_div p {
+	font-size: 21px;
+	padding-left: 22px
+}
+
+.left_div {
+	width: 57%;
+}
+
+.form_div, .left_div p {
+  width: 85%;
+  padding: 17px;
+}
+
+.Ron_div {
+	width: 50%;
+}
+
+}
